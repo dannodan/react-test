@@ -13,13 +13,13 @@ export default class HomeScreen extends Component {
             "GrahamCampbell", "fabpot", "weierophinney", "rhk", "josh"
         ]
 
-        return topFive.map((entry, index) => <Button key={`user-${index}`} onClick={this.selectUser(entry)}>{entry}</Button>);
+        return topFive.map((entry, index) => <Button className="user-button" key={`user-${index}`} onClick={this.selectUser(entry)}>{entry}</Button>);
     }
 
     render() {
         return (
             <React.Fragment>
-                <PageHeader title="Home" backIcon={false}/>
+                <PageHeader className="page-header" title="Home" backIcon={false}/>
                 <h1>Top 5 GitHub Users</h1>
                 <p>Tap the username to see more information</p>
                 {this.renderUsers()}
