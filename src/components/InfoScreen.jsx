@@ -27,7 +27,7 @@ export default class InfoScreen extends Component {
         const { avatar_url, name, location } = this.state;
         return (
             <React.Fragment>
-                <PageHeader title="Info" onBack={onBack}/>
+                <PageHeader title="Person" onBack={onBack}/>
                 <Row type="flex" justify="center">
                     <Col xs={22} md={12} lg={8}>
                             <Card>
